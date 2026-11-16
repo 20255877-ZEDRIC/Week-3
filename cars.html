@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Used Cars for Sale | DriveHome</title>
+<meta name="description" content="DriveHome - trusted used cars in New Mexico.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id="header"></header>
+
+<section class="pagehead"><div class="wrap"><h1>Used cars for sale</h1><p>Every car is inspected and priced fairly.</p></div></section>
+<div class="wrap">
+<h2 style="margin-top:28px">Brands</h2><div class="brands" id="brands"></div>
+<div class="bar" style="margin-top:28px">
+<div class="tabs"><button class="tab on" data-b="all">All</button><button class="tab" data-b="low">Under $20k</button><button class="tab" data-b="mid">$20k – $40k</button><button class="tab" data-b="high">Over $40k</button></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><span id="count" style="color:var(--muted);font-size:.9rem"></span>
+<input id="q" placeholder="Search make or model" aria-label="Search" style="padding:10px 12px;border:1px solid var(--line);border-radius:4px">
+<select id="sort" aria-label="Sort"><option value="popular">Sort: Popular</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="miles">Lowest mileage</option></select>
+<select id="brand" aria-label="Brand"></select><select id="type" aria-label="Type"><option value="all">All types</option><option>Sedan</option><option>SUV</option><option>MPV</option><option>Pickup</option><option>Hatchback</option><option>Luxury</option><option>Electric</option></select></div>
+</div>
+<div class="grid" id="cars" style="margin-top:22px"></div>
+<h2 id="saved">Saved cars</h2><div class="grid" id="sg"></div>
+</div>
+<footer id="footer"></footer>
+<script src="script.js"></script>
+</body>
+</html>
